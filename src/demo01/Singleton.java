@@ -2,6 +2,7 @@ package demo01;
 
 public class Singleton {
     // volatile 作用：1 保证线程可见性（MESI,缓存一致性协议），2 禁止指令重排序
+    // volatile 不能替代synchronized，它不能保证原子性
     private static volatile Singleton instance;// JIT 这里需要添加volatile，因为多线程下存在指令重排情况，添加volatile后禁止指令重排序（CPU），等对象初始化完成后才赋值
 
     public Singleton(){
