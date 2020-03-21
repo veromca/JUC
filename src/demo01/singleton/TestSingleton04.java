@@ -1,4 +1,4 @@
-package demo01;
+package demo01.singleton;
 
 /**
  * 枚举单例

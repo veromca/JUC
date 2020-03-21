@@ -1,4 +1,4 @@
-package demo01;
+package demo01.singleton;
 
 /**
  * 线程安全的单例模式
@@ -8,11 +8,8 @@ public class TestSingleton01 {
     // volatile 作用：1 保证线程可见性（MESI,缓存一致性协议），2 禁止指令重排序
     // volatile 不能替代synchronized，它不能保证原子性
     private static volatile TestSingleton01 instance;// JIT 这里需要添加volatile，因为多线程下存在指令重排情况，添加volatile后禁止指令重排序（CPU），等对象初始化完成后才赋值
-
     public TestSingleton01(){
-
     }
-
     public static TestSingleton01 getInstance(){
         // 业务逻辑代码省略
         if(instance == null){
@@ -30,9 +27,8 @@ public class TestSingleton01 {
         }
         return instance;
     }
-
     public static void main(String[] args) {
-        //多线程调用
+       /* //多线程调用
         for(int i=0;i<100;i++){
             new Thread(()->{
                 System.out.println(TestSingleton01.getInstance().hashCode());
@@ -42,6 +38,7 @@ public class TestSingleton01 {
             new Thread(()->{
                 System.out.println(TestSingleton01.getInstance().hashCode());
             }).start();
-        }
+        }*/
+       Object o =new Object();
     }
 }

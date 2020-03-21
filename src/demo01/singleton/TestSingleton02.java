@@ -1,10 +1,10 @@
-package demo01;
+package demo01.singleton;
 
 /**
  * 饿汉式单例:在程序加载时创建类的实例
  */
 public class TestSingleton02 {
-    public static TestSingleton02 instance = new TestSingleton02();
+    public static final TestSingleton02 instance = new TestSingleton02();
 
     private TestSingleton02() {
 
