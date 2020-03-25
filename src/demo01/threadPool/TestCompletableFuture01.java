@@ -9,7 +9,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 可以组合很多步骤，最终获取各个步骤的结果；场景：购物网站价格比较，线程1 京东价格，线程2 淘宝价格，线程3 天猫价格，最后汇总结果。
+ * 假设你能够提供一个服务
+ * 这个服务查询各大电商网站同一类产品的价格并汇总展示
+ * 可以组合很多步骤，最终获取各个步骤的结果；场景：购物网站价格比较，线程1 京东价格，线程2 淘宝价格，线程3 天猫价格
  */
 public class TestCompletableFuture01 {
 
