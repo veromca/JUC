@@ -56,7 +56,7 @@ public class TestRejectedHandler {
             //save r kafka mysql redis
             //try 3 times
             if(executor.getQueue().size() >=1) {
-                System.out.println("重试...");
+                System.out.println("try put again...");
                 //try put again();
             }
         }
