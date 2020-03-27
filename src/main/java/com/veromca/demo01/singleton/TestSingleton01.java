@@ -1,4 +1,4 @@
-package demo01.singleton;
+package com.veromca.demo01.singleton;
 
 /**
  * 线程安全的单例模式

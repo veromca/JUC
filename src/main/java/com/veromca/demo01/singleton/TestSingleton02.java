@@ -1,4 +1,4 @@
-package demo01.singleton;
+package com.veromca.demo01.singleton;
 
 /**
  * 饿汉式单例:在程序加载时创建类的实例

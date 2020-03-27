@@ -1,4 +1,4 @@
-package demo01.queue;
+package com.veromca.demo01.queue;
 
 import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;

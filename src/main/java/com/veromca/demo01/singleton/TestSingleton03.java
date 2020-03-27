@@ -1,4 +1,4 @@
-package demo01.singleton;
+package com.veromca.demo01.singleton;
 
 /**
  * 懒汉模式单例

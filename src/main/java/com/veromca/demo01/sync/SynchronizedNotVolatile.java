@@ -1,4 +1,4 @@
-package demo01.sync;
+package com.veromca.demo01.sync;
 
 import java.util.ArrayList;
 import java.util.List;
